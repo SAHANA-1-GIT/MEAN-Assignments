@@ -1,0 +1,30 @@
+Mongodb-Assignment-1
+
+query/find documents
+
+1. db.movies.find()
+2. db.movies.find({writer:"Quentin Tarantino"})
+3. db.movies.find({actors:"Brad Pitt"})
+4. db.movies.find({franchise:"The Habbit"})
+5. db.movies.find({year:{$regex:"19^"}})
+6. db.movies.find({$or:[{year:{$lt:2000}},{year:{$gt:2010}]}
+
+Text Search
+7. db.movies.find({synopsis:{$regex:"^Biblo^",$options:"i"}})
+8. db.movies.find({synopsis:{$regex:"^Gandalf^",$options:"i"}})
+9. db.movies.find
+
+
+Delete Documents
+10. db.movies.delete({name:"Pee wee Herman's Big Adventure"})
+11. db.movies.delete({name:"Avatar"})
+
+Querying related to collections
+12. db.users.find()
+13. db.posts.find()
+14. db.posts.find({username:"GoodGuyGreg"})
+15. db.posts.find({username:"ScumbagSteve"})
+16. db.comments.find()
+17. db.comments.find({username:"GoodGuyGreg"})
+18. db.comments.find({username:"ScumbagSteve"})
+19.   
